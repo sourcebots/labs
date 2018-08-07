@@ -7,7 +7,7 @@ Using what you have learned in previous labs about switches, you can place metal
 The schematic below illustrates the basic circuit setup. Anything inside of the black border is in your robot:
 
 
-\begin{center}  \includegraphics[height=8cm]{img/collision-circuit.png} \end{center}
+\begin{center}  \includegraphics[height=8cm]{img/schem.png} \end{center}
 
 *Figure 1: Pull-up configuration for the sensor circuit*
 
