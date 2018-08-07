@@ -30,9 +30,13 @@ The diagram below illustrates the required circuit for above:
  - Write a program that keeps track of how many times you have completed the circuit and make it buzz or iluminate an LED after the circuit has been completed three times. Connect the metal contact pin into 5.
 
 ## Simon Says (Extension)
-Let's have a bit of fun, load the file simon_says.py and put it onto your robot USB!
+Let's have a bit of fun, load the file `simon_says.py` and put it onto your robot USB!
 
-**Note: You will have to edit the "simon-says.py" lines 12-16 to the pins you're using. The INPUT-PIN variable is for your metal contacts and the OUTPUT-PIN variable is for your LEDs**
+You can download it from [here](https://gist.github.com/PeterJCLaw/8d3ecfe70c331fe9683e2e264e829bc0).
+
+You will also need to rename the `simon_says.py` to `main.py`
+
+**Note: You will have to edit the `simon-says.py` lines 12-16 to the pins you're using. The INPUT-PIN variable is for your metal contacts and the OUTPUT-PIN variable is for your LEDs**
 
 Wire up two more of the metal contact circuits and two more LED circuits and plug the LEDs into pins [3, 4] and the other two metal contact pins into [6, 7]
 
