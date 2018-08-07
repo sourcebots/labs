@@ -15,8 +15,8 @@ Current is the **rate of flow** of electric charge. This means the amount of cha
 
 **Resistance** is the easiest quantity to define. It is defined by the equation:
 
-\text{Resistance} = \frac{\text{Potential Difference}}{\text{Current}}
+$$\text{Resistance} = \frac{\text{Potential Difference}}{\text{Current}}$$
 
-R = \frac{V}{I}
+$$R = \frac{V}{I}$$
 
-Resistance is measured in Ohms (\Omega).
+Resistance is measured in Ohms ($\Omega$).

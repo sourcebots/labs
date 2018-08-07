@@ -2,12 +2,12 @@
 
 For this year's game. We will have metal tape at various points around the arena and as you are probably aware, the cans are also metal!
 
-Using what you have learned in previous labs about switches, you can place metal contacts on your robot so you can detect when you have passed a strip or are touching a can. 
+Using what you have learned in previous labs about switches, you can place metal contacts on your robot so you can detect when you have passed a strip or are touching a can.
 
 The schematic below illustrates the basic circuit setup. Anything inside of the black border is in your robot:
 
 
-![](https://github.com/sourcebots/labs/blob/master/electronics/schem.png?raw=true)
+![](img/schem.png)
 
 *Figure 1: Pull-up configuration for the sensor circuit.*
 
