@@ -1,4 +1,4 @@
-# Tutorial 1: Collision Sensors
+# Collision Sensors
 
 Before you can do any practical electronics, you need to have some understanding of the following concepts:
 

@@ -1,4 +1,4 @@
-# Ultrasound Sensor Guide
+# Ultrasound Sensor
 
 ## About the sensor
 
@@ -19,7 +19,7 @@ The `Robot` library will automatically measure the time between the trigger and 
 
 ## Setting up the sensor
 
-To use the sensor, you will need to do some soldering. 
+To use the sensor, you will need to do some soldering.
 
 [INSERT IMAGE SHOWING HEADER IN STRIPBOARD]
 
