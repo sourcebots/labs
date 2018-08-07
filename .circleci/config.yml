@@ -1,0 +1,13 @@
+
+version: 2
+jobs:
+    build:
+        docker:
+            - image: theorangeone/docker-pandoc
+        working_directory: ~/labs/electronics
+        steps:
+            - checkout
+            - run: make
+            - store_artifacts:
+                path: lab.pdf
+                destination: lab.pdf
