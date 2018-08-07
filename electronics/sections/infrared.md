@@ -32,3 +32,56 @@ We could make this up from a $180\Omega$ resistor and a $10\Omega$ resistor in s
 \begin{center}  \includegraphics[width=5cm]{img/ir-circuit.png} \end{center}
 
 **Wire this circuit up on a breadboard and use a smart phone or webcam to see if it works. (Ask if you need help).**
+
+## Transistors and Phototransistors
+
+Transistors can be used to make very complicated devices, but for our purposes they will be used as an infrared detector. A transistor is a three terminal device. It has a collector, an emitter and a base. The key feature of the transistor is that the current that flows into the base determines the current that flows into the collector.
+
+$$I_{Collector} = \text{Gain} \times I_{Base}$$
+
+A typical transistor will have a gain of 100.
+
+\begin{center}  \includegraphics[height=5cm]{img/transistor.png} \end{center}
+
+When no current flows into the base, the transistor acts like a huge resistor and very little current can flow through it. When a small current flows into the base the transistor acts like a resistor with a small value, so a lot of current can flow through it. This is essentially the same as a switch; only a small current base current is used instead of a physical force.
+
+A phototransistor behaves in the same way, only instead of having a base wire phototransistors are triggered by light. When light is shone on the phototransistor a current is allowed to flow from the collector through the emitter. More light gives a bigger current.
+
+## Wiring up the phototransistor
+
+In the collision tutorial, we used a pull-down resistor to help us read the state of the switch. In this case we'll use a pull-up resistor. The voltage across the phototransistor will tell us whether or not light is shining on it.
+
+\begin{center}  \includegraphics[width=5cm]{img/photo-circuit.png} \end{center}
+
+Choosing a value for R is slightly harder than before. Let's start with the datasheet for the L-53P3C phototransistor.
+
+When the beam is blocked, there will be a very small current in the circuit. From the datasheet:
+
+\begin{center}  \includegraphics[width=18cm]{img/photo-dark.png} \end{center}
+
+So the current will be around 100nA when the beam is blocked. For the Arduino to read a high input we will need at least 4V across the phototransistor, so 1V across the resistor.
+
+To calculate the maximum resistor size you can use the usual equation:
+
+$$R = \frac{1}{100 \times 10^{-9}} = 10000000\Omega$$
+
+So a $10M\Omega$ resistor would be suitable.
+
+When the beam is not blocked a larger current will flow. From the datasheet the maximum allowed current is 3mA.
+
+\begin{center}  \includegraphics[width=18cm]{img/photo-state.png} \end{center}
+
+So for the on state we want a current of no more than 3mA, and a voltage across the phototransistor of 1V. This means we want 4V across the resistor.
+
+Using the equation again:
+
+$$R = \frac{4}{3 \times 10^{-3}} = 1333\Omega$$
+
+Now that you have a maximum and minimum, you can experiment to find what resistor value gives you the best high and low level outputs. Higher resistor values will make the detector more sensitive.
+
+**Task**: Try assembling the circuit that has been described. All the parts you need are available in the lab. If you need help, remember that you can always ask a mentor. Start on breadboard and once you’re happy, solder it onto a stripboard.
+
+Things to consider:
+* Is a more sensitive detector necessarily better?
+* Will the distance between the LED and phototransistor make a difference? Why?
+* How could you make the IR beam from the LED narrower? Why might this be useful?
