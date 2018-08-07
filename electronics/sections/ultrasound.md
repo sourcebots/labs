@@ -6,7 +6,7 @@ Each team has been provided with two HC-SR04 ultrasonic distance sensors.
 
 You have also been provided with two four pin female headers.
 
-[INSERT IMAGE OF HC-SR04]
+\begin{center}  \includegraphics[height=4cm]{img/ultra-sensor.png} \end{center}
 
 The sensor has four pins, labelled **Vcc**, **Trig**, **Echo** and **GND**.
 
@@ -21,7 +21,7 @@ The `Robot` library will automatically measure the time between the trigger and 
 
 To use the sensor, you will need to do some soldering.
 
-[INSERT IMAGE SHOWING HEADER IN STRIPBOARD]
+\begin{center}  \includegraphics[height=4cm]{img/ultra-strip.png} \end{center}
 
 1. Solder the female header onto a piece of stripboard.
 2. Solder one length of wire in the same line as each pin. Make sure you use a **red wire** for Vcc and a **black wire** for GND. Other wires should be in any other colour of your choice.
