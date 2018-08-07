@@ -7,7 +7,7 @@ Using what you have learned in previous labs about switches, you can place metal
 The schematic below illustrates the basic circuit setup. Anything inside of the black border is in your robot:
 
 
-![](img/schem.png){ width=250px }
+\begin{center}  \includegraphics[height=8cm]{img/collision-circuit.png} \end{center}
 
 *Figure 1: Pull-up configuration for the sensor circuit*
 
@@ -23,14 +23,14 @@ When the contacts are not on a metal object the Arduino pin is pulled **HIGH** b
 
 The diagram below illustrates the required circuit for above:
 
-![](img/led-series.png){ width=250px }
+\begin{center}  \includegraphics[height=8cm]{img/led-series.png} \end{center}
 
 *Figure 2: LED Circuit with protecting diode*
 
  - Write a program that keeps track of how many times you have completed the circuit and make it buzz or iluminate an LED after the circuit has been completed three times. Connect the metal contact pin into 5.
 
 ## Simon Says (Extension)
-Let's have a bit of fun, load the file simon_says.py from [] and put it onto your robot USB!
+Let's have a bit of fun, load the file simon_says.py from [here]("place-holder") and put it onto your robot USB!
 
 Wire up two more of the metal contact circuits and two more LED circuits and plug the LEDs into pins [3, 4] and the other two metal contact pins into [6, 7]
 
