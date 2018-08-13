@@ -4,10 +4,10 @@ jobs:
     build:
         docker:
             - image: theorangeone/docker-pandoc
-        working_directory: ~/labs/electronics/electronics
+        working_directory: ~/labs/
         steps:
             - checkout
-            - run: make
+            - run: make -C electronics
             - store_artifacts:
-                path: lab.pdf
-                destination: lab.pdf
+                path: electronics/lab.pdf
+                destination: electronics.pdf
