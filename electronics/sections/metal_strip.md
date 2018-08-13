@@ -19,7 +19,7 @@ When the contacts are not on a metal object the Arduino pin is pulled **HIGH** b
 
  - Using the theory learned above, build a circuit that will implement the above functionality and think about how you could use this for your robot.
 
- - Connect an LED to pin 2 on the Arduino and make it turn on when the circuit is completed. You will need to put a resistor in series with the diode to avoid damaging it. We'd recommend a value of 330.
+ - Connect an LED to pin 2 on the Arduino and make it turn on when the circuit is completed. You will need to put a resistor in series with the diode to avoid damaging it. We'd recommend a value of 330Ω.
 
 The diagram below illustrates the required circuit for above:
 
