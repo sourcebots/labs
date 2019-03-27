@@ -1,4 +1,4 @@
-#Use of Operational Amplifiers (Op Amps)
+# Use of Operational Amplifiers (Op Amps)
 
 An operational amplifier is a device that takes 2 inputs, measures the difference between them, then outputs this voltage increased
 by a factor known as "gain". The gain of an operational amplifier is the extent to which the difference in voltage between its two inputs
@@ -15,7 +15,7 @@ However, In circuits where analogue and digital signals are both present, the sa
 \begin{center} \includegraphics[height=5cm] {img/comparator.png} \end{center}
 
 Try building the circuit shown above:
-*Try the circuit for different input voltages
-*What happens if you change the values of R1 and R2
+* Try the circuit for different input voltages
+* What happens if you change the values of R1 and R2
 
 What do you think is happening here? Do you think that you could use it for your robot?
