@@ -31,7 +31,7 @@ When the switch is closed (pushed), the output terminal is connected to the 5V l
 
 When the switch is open (not pushed), there is no current in the resistor. From the equation $$V = IR$$, if there is no current there will be no voltage across the resistor. This means the output is at 0V.
 
-**Important note!** You might wonder why you can’t just use a switch connected between 5V and the output. If you do this, when the switch is open the output will not be connected to either 5V or 0V. This is called a *floating line*, and will be read as a random value by the Arduino board.
+**Important note!** You might wonder why you can’t just use a switch connected between 5V and the output. If you do this, when the switch is open the output will not be connected to either 5V or 0V. This is called a *floating line*, and there is no way of knowing what your Arduino will interpret it as.
 
 This circuit can be used as an input to a digital system. Your Arduino board can read the state of this input using the digital read command. See the programming docs for more detail.
 
