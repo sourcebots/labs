@@ -11,7 +11,7 @@ However, In circuits where analogue and digital signals are both present, the sa
 
 \begin{center} \includegraphics[height=5cm] {img/comparator.png} \end{center}
 
-Try building the circuit shown above, connecting the signal generator in place of voltage supply V2. Set the signal generator to produce a sinusoidal output with a peak to peak amplitude of 5V and a DC offset of 2.5 volts. 
+Try building the circuit shown above, connecting the signal generator in place of voltage supply V2. Set the signal generator to produce a sinusoidal output with a peak to peak amplitude of 5 volts and a DC offset of 2.5 volts. 
 
 * What happens if you change the values of R1 and R2?
 * What if you were to connect your phototransistor in place of the signal generator?
