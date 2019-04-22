@@ -22,7 +22,7 @@ $$\text{Vout} = \text{V1} \times \frac{\text{R2}}{\text{R1+R2}}$$
 
 You may find at some point that you not only need to know if your robot is touching something, but how hard it is pressing against something. Force sensitive resistors provide one way in which you could do this. You can make your own FSR out of some of the conductive foam that you can find in the lab, and two sheets of any non conducting material, ideally something that does not compress very much, so that as much of the force as possible is transfered to the foam, rather than just deforming the material on the outside.
 
-The resistance of any object is defined by three factors, the object's length (L), it's cross-sectional area (A), and a constant known as resistivity ($\Omega$), this gives the resistance equation as:
+The resistance of any object is defined by three factors, the object's length (L), it's cross-sectional area (A), and a constant known as resistivity ($\Rho$), this gives the resistance equation as:
 
 $$R= \rho \times frac{L}{A}$$
 
