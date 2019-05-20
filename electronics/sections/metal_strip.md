@@ -11,7 +11,7 @@ The schematic below illustrates the basic circuit setup. Anything inside of the 
 
 *Figure 1: Pull-up configuration for the sensor circuit*
 
-In the above figure, the green lines represent metal contacts and the grey box is a metal object. The circuit essentialy functions like a switch, when both contacts hit a metal object, the circuit completes and the Arduino will read a **LOW** value on the pin.
+In the above figure, the green lines represent metal contacts and the grey box is a metal object. This can be used to detect if your robot is touching something metal. If you are not touching something, then the two contacts form an open circuit. When a metal object is touched by the two contacts, this forms a circuit and allows current to flow across the contacts and object.
 
 When the contacts are not on a metal object the Arduino pin is pulled **HIGH** by **R1**.
 
