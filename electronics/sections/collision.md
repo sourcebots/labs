@@ -33,7 +33,7 @@ Take a look at the following circuit:
 
 \begin{center}  \includegraphics[height=8cm]{img/collision-circuit.png} \end{center}
 
-When the switch is closed (pushed), the output terminal is directly connected to the 5V line, so the output is at 5V. The resistor is in the circuit to limit the current that flows.
+When the switch is closed (pushed), the output terminal is directly connected to the 5V line, so the output is at 5V. The resistor then serves to limit the current that flows from the 5V supply to ground. If there were no resistor here, the 5V supply would be directly connected to ground with nothing in between, known as a short circuit. This would cause a large current to flow through the wire and switch to allow for 5V to be lost along the small resistance of the wire.
 
 When the switch is open (not pushed), there is no current in the resistor. From the equation $$V = IR$$, if there is no current there will be no voltage across the resistor. This means the output is at 0V. This resistor is known as a "pull-down" resistor, and one way to think of it is as though you were placing a "weak" 0V on the output. When the switch is pressed, the output is connected to a "strong" 5V, which is then read as the output of the circuit.
 
