@@ -4,20 +4,26 @@ Before you can do any practical electronics, you need to have some understanding
 
 * Charge
 * Current
-* Potential Difference (aka. Voltage)
+* Potential Difference (Voltage)
 * Resistance
 
-**Charge** is a fundamental property of matter. This means it is something we can observe but not explain in other terms. In this case we can observe that some particles attract each other, some repel, and some experience no force. Since there are three possible states they were called positive, negative and neutral (no charge). Charge is measured in **Coulombs (C)**.
+**Charge** is a fundamental property of matter. This means it is something we can observe but not explain in other terms. In this case we can observe that some particles attract each other, some repel, and some experience no force. There are three possible states of charge: positive, negative and neutral (no charge). Charge is measured in **Coulombs (C)**.
 
-**Current** is the **rate of flow** of electric charge. This means the amount of charge flowing in one second. In the case of a wire **electrons will flow**, but in electronics we aren’t very interested in which particles are moving so we assume that positive charges flow to negative. Current is measured in **Amperes (A)**. If a wire carries a current of 1 Amp, then it means that in each second, 1 Coulomb of charge (about 6250000000000000000 electrons) moves through that wire!
+**Current** is the **rate of flow** of charge. This means the amount of charge flowing in one second. In the case of a wire **electrons will flow**. Current is measured in **Amperes (A)**. If a wire carries a current of 1 Amp, 1 Coulomb of charge ( $$6.25 \times 10^18$$ electrons) moves through that wire every second!
 
-**Potential difference** is the difference in potential energy for each Coulomb of charge. For example, if you use a voltmeter to test the voltage across a battery, and your voltmeter says 9 Volts, it means that each coulomb of charge leaves with 9 Joules more energy than it entered with. For a component the voltmeter would tell you the energy lost by each charge. PD is measured in **Volts (V)**.
+**Potential difference** (Voltage) is the amount of work done (in Joules) to move 1 Coulomb of charge from one point to another.There isn't a way to measure voltage as an absolute quantity (think of things like temperature or force), so all voltages are measured relative to another point. Potential difference is measured in **Volts (V)**.
 
-**Resistance** is the easiest quantity to define. It is defined by the equation:
+**Resistance** is a way of measuring how difficult it is for current to flow through something. You might be familiar with the following equation: 
 
 $$\text{Resistance} = \frac{\text{Potential Difference}}{\text{Current}}$$
 
-$$R = \frac{V}{I}$$
+$$R = \frac{V}{I}$$ 
+
+or, rearranging:
+
+$$V = IR$$
+
+So resistance is a measure of the amount of work done to allow 1 Coulomb of current to flow through a device.
 
 Resistance is measured in Ohms ($\Omega$).
 
@@ -27,11 +33,11 @@ Take a look at the following circuit:
 
 \begin{center}  \includegraphics[height=8cm]{img/collision-circuit.png} \end{center}
 
-When the switch is closed (pushed), the output terminal is connected to the 5V line, so the output is at 5V. The resistor is in the circuit to limit the current that flows.
+When the switch is closed (pushed), the output terminal is directly connected to the 5V line, so the output is at 5V. The resistor then serves to limit the current that flows from the 5V supply to ground. If there were no resistor here, the 5V supply would be directly connected to ground with nothing in between, known as a short circuit. This would cause a large current to flow through the wire and switch to allow for 5V to be lost along the small resistance of the wire.
 
-When the switch is open (not pushed), there is no current in the resistor. From the equation $$V = IR$$, if there is no current there will be no voltage across the resistor. This means the output is at 0V.
+When the switch is open (not pushed), there is no current in the resistor. From the equation $$V = IR$$, if there is no current there will be no voltage across the resistor. This means the output is at 0V. This resistor is known as a "pull-down" resistor, and one way to think of it is as though you were placing a "weak" 0V on the output. When the switch is pressed, the output is connected to a "strong" 5V, which is then read as the output of the circuit.
 
-**Important note!** You might wonder why you can’t just use a switch connected between 5V and the output. If you do this, when the switch is open the output will not be connected to either 5V or 0V. This is called a *floating line*, and will be read as a random value by the Arduino board.
+**Important note!** You might wonder why you can’t just use a switch connected between 5V and the output. If you do this, when the switch is open the output will not be connected to either 5V or 0V. This is called a *floating line*, and there is no way of knowing how your Arduino will read it. Connecting to 0V through a resistor makes sure we always know what the voltage at the output is, even when the switch is not pressed.
 
 This circuit can be used as an input to a digital system. Your Arduino board can read the state of this input using the digital read command. See the programming docs for more detail.
 

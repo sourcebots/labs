@@ -11,7 +11,7 @@ LEDs are a form of diode. A diode is an electronic component which will only con
 
 \begin{center}  \includegraphics[height=4cm]{img/diode.png} \end{center}
 
-LEDs have a particularly high forward voltage; roughly 1.2V. Each Coulomb of charge passing through it will lose 1.2J of energy, which is converted to Infrared radiation.
+LEDs have a particularly high forward voltage; roughly 1.2V for the IR LEDs that you will be using here. Each Coulomb of charge passing through it will lose 1.2J of energy, which is converted to Infrared radiation.
 
 ## Wiring up the LED
 
@@ -45,7 +45,7 @@ A typical transistor will have a gain of 100.
 
 When no current flows into the base, the transistor acts like a huge resistor and very little current can flow through it. When a small current flows into the base the transistor acts like a resistor with a small value, so a lot of current can flow through it. This is essentially the same as a switch; only a small current base current is used instead of a physical force.
 
-A phototransistor behaves in the same way, only instead of having a base wire phototransistors are triggered by light. When light is shone on the phototransistor a current is allowed to flow from the collector through the emitter. More light gives a bigger current.
+A phototransistor behaves in the same way, only instead of having a base wire phototransistors are triggered by light. When light shines on the phototransistor a current is allowed to flow from the collector through the emitter. More light gives a bigger current.
 
 ## Wiring up the phototransistor
 
@@ -59,7 +59,7 @@ When the beam is blocked, there will be a very small current in the circuit. Fro
 
 \begin{center}  \includegraphics[width=18cm]{img/photo-dark.png} \end{center}
 
-So the current will be around 100nA when the beam is blocked. For the Arduino to read a high input we will need at least 4V across the phototransistor, so 1V across the resistor.
+So the current will be around 100nA when the beam is blocked. For the Arduino to read a high input we will need at least 3V across the phototransistor, so 1V across the resistor. Here, as the current through the transistor increases, a larger current also flows through R1,and hence, the voltage drop across R1 is increased. In an ideal case, you would read exactly 5V when no light reached the transistor, and 0V at the output when maximum light reached the transistor. An interesting property of digital circuits is the reason why this still works, even with non-ideal components. In digital electronics, values are relative to a threshold voltage, where if they are above, they read as "1", and below as "0", even if they are not exactly 5V or 0V.
 
 To calculate the maximum resistor size you can use the usual equation:
 
