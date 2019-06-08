@@ -31,7 +31,7 @@ In order to estimate range using your ultrasound, you will need to calculate the
 
 You can calculate the speed of sound by taking a known distance, and seeing how long it takes for a response from the ultrasound. 
 
-Set the signal generator to produce a square wave of 20 Hz, with a low level of 0V, and a high level of 5V. This will then trigger your ultrasound to start transmitting. After 10$\mu$s the ultrasound sensor will then transmit. Using the oscilloscope, find the time difference between the start of transmission and the echo signal going high. Since the ultrasound signal has to go outward and then return to the sensor, divide this time by 2. 
+Set the signal generator to produce a pulse wave of 10$\mu$s, with a low level of 0V, and a high level of 5V and a trailing period of 60ms. This will trigger your ultrasound to start transmitting. After 10$\mu$s the ultrasound sensor will then transmit. Using the oscilloscope, find the time difference between the start of transmission and the echo signal going high. Since the ultrasound signal has to go outward and then return to the sensor, divide this time by 2.
 
 - What is your measured speed of sound? Is this close to the expected value?
 - How could you integrate this into your robot? How would you modify your code to measure range?
