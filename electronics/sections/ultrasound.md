@@ -26,8 +26,8 @@ Using the provided PCB, connect the ultrasound sensor to the female header on on
 ## Calculating the speed of sound
 
 In order to estimate range using your ultrasound, you will need to calculate the speed of sound. Since velocity is given by:
- 
-\begin{center} $$ velocity = \frac{distance}{time} $$
+
+$$ velocity = \frac{distance}{time} $$
 
 You can calculate the speed of sound by taking a known distance, and seeing how long it takes for a response from the ultrasound. 
 
