@@ -34,6 +34,7 @@ You can calculate the speed of sound by taking a known distance, and seeing how 
 Set the signal generator to produce a square wave with a frequency of 20Hz, with a low level of 0V, and a high level of 5V. Adjust the duty cycle of your square wave until the 5V period is approximately 10$\mu$s. You can verify this by looking at the value of each square on the oscilloscope's screen.
 
 After 10$\mu$s the ultrasound sensor will then transmit. In order to get an accurate reading, you may need to adjust your oscilloscope's "Trigger" settings. Press the trigger menu button towards the right of the oscilloscope, and set your triggering on the same channel as the trigger pin of your ultrasound sensor, along with setting the coupling to DC and the trigger type to edge. You can also adjust the trigger level, which is the threshold that will cause your oscilloscope to take a reading. See if you can find a section where the echo signal goes high (You may need to adjust your time scale to do this).
+
 \begin{center} \includegraphics[height=4cm]{img/ultrasound-scope.PNG} \end{center}
 
 You should now see something like the image above. Using the oscilloscope, find the length in seconds of the high section of the echo signal. This is the length of time required to get recieve a signal back. Since the ultrasound signal has to go outward and then return to the sensor, divide this time by 2.
