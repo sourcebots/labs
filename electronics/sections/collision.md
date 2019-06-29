@@ -35,7 +35,7 @@ When the switch is closed (pushed), the output terminal is directly connected to
 
 When the switch is open (not pushed), there is no current in the resistor. From the equation $$V = IR$$, if there is no current there will be no voltage across the resistor. This means the output is at 0V. This resistor is known as a "pull-down" resistor, and one way to think of it is as though you were placing a "weak" 0V on the output. When the switch is pressed, the output is connected to a "strong" 5V, which is then read as the output of the circuit.
 
-**Important note!** You might wonder why you can’t just use a switch connected between 5V and the output. If you do this, when the switch is open the output will not be connected to either 5V or 0V. This is called a *floating line*, and there is no way of knowing how your Arduino will read it. Connecting to 0V through a resistor makes sure we always know what the voltage at the output is, even when the switch is not pressed.
+**Important note!** You might wonder why you can’t just use a switch connected between 5V and the output. If you do this, when the switch is open the output will not be connected to either 5V or 0V. This is called a *floating line*, and there is no way of knowing what potential it is at, and so it would be very unreliable. Connecting to 0V through a resistor makes sure we always know what the voltage at the output is, even when the switch is not pressed.
 
 This circuit can be used as an input to a digital system. Your Arduino board can read the state of this input using the digital read command. See the programming docs for more detail.
 
