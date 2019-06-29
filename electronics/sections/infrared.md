@@ -23,13 +23,16 @@ Our IR LED is an L-53F3C. From the datasheet we can find that the LED uses a for
 
 \begin{center}  \includegraphics[width=18cm]{img/led-spec.png} \end{center}
 
+This is the circuit that we will be using, and using the diagram we can work out what value the resistor must be.
+
+\begin{center}  \includegraphics[width=5cm]{img/ir-circuit.png} \end{center}
+
 We can now figure out the value of R needed by using R = V/I. V is the voltage drop across the resistor (5 – 1.2) and I is the current flowing through it (20mA). This gives us a value for R of:
 
 $$R = \frac{3.8}{0.02} = 190\Omega$$
 
 We could make this up from a $180\Omega$ resistor and a $10\Omega$ resistor in series, but according to the datasheet the absolute maximum current is 50mA, so a $180\Omega$ will be close enough!
 
-\begin{center}  \includegraphics[width=5cm]{img/ir-circuit.png} \end{center}
 
 **Wire this circuit up on a breadboard and use a smart phone or webcam to see if it works. (Ask if you need help).**
 
