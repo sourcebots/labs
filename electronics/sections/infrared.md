@@ -15,7 +15,7 @@ LEDs have a particularly high forward voltage; roughly 1.2V for the IR LEDs that
 
 ## Wiring up the LED
 
-LEDs are polar devices. If you plug them in backwards they may break. LEDs have two features to help you tell anode from cathode. Firstly, LEDs have one long and one short leg. The long leg is the anode (+). The other feature is that LEDs will have a round side and a flat edge. The flat edge shows you where the cathode (-) is.
+LEDs are polarized devices. If you plug them in backwards they may break. LEDs have two features to help you tell anode from cathode. Firstly, LEDs have one long and one short leg. The long leg is the anode (+). The other feature is that LEDs will have a round side and a flat edge. The flat edge shows you where the cathode (-) is.
 
 A useful way to remember this is **short to nought**.
 
@@ -34,7 +34,7 @@ $$R = \frac{3.8}{0.02} = 190\Omega$$
 We could make this up from a $180\Omega$ resistor and a $10\Omega$ resistor in series, but according to the datasheet the absolute maximum current is 50mA, so a $180\Omega$ will be close enough!
 
 
-**Wire this circuit up on a breadboard and use a smart phone or webcam to see if it works. (Ask if you need help).**
+**Wire this circuit up on a breadboard. A smart phone camera or webcam can see IR light so you can use it to test if your circuit works. (Ask if you need help).**
 
 ## Transistors and Phototransistors
 
@@ -85,6 +85,7 @@ Now that you have a maximum and minimum, you can experiment to find what resisto
 **Task**: Try assembling the circuit that has been described. All the parts you need are available in the lab. If you need help, remember that you can always ask a mentor. Start on breadboard and once you’re happy, solder it onto a stripboard.
 
 Things to consider:
-* Is a more sensitive detector necessarily better?
-* Will the distance between the LED and phototransistor make a difference? Why?
-* How could you make the IR beam from the LED narrower? Why might this be useful?
+
+- Is a more sensitive detector necessarily better?
+- Will the distance between the LED and phototransistor make a difference? Why?
+- How could you make the IR beam from the LED narrower? Why might this be useful?

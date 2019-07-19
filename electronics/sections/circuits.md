@@ -14,7 +14,7 @@ supplies to your circuit, for example 5V and Ground.
 
 ### Stripboard
 As mentioned previously, breadboard is often not suitable for creating a circuit permanently. This is what stripboard (also known as protoboard) is used for.
-Stripboard allows you to solder your components into place for a more permanent solution. While it is more premanent, strip board does still have issues which lead to it generally only being used for protoypes, or small batches of simple circuits. Stripboards are arranged in the same way as breadboards. 
+Stripboard allows you to solder your components into place for a more permanent solution. While it is more permanent, stripboard does still have issues which lead to it generally only being used for protoypes, or small batches of simple circuits. Stripboards are arranged in the same way as breadboards. 
 Place the components legs through from the plastic coated side,and then solder the legs to the exposed copper on the bottom. One area where stripboard is more flexible than breadboard is the ability to break the copper trace.
 This allows multiple components to be placed in the same column without connecting them. A specialist tool is used to do this.
 
@@ -28,6 +28,7 @@ and current limits (this should be done before connecting your circuit, as the p
 ### Taking Measurements from Circuits
 In the lab, you will find that your desk has both an oscilloscope and a digital multimeter. 
 These are both useful tools for investigating issues within your circuit, but have different functions.
+
 #### Multimeters
 A Digital Multimeter (DMM) is a useful tool for general debugging of a circuit, being able to measure a number of different physical properties. On the front panel of the device
 there are buttons to choose what the DMM will measure. This allows you to take readings of resistance, capacitance, current, voltage, diode polarity, and continuity.
