@@ -4,8 +4,6 @@
 
 Each team has been provided with two HC-SR04 ultrasonic distance sensors.
 
-\begin{center}  \includegraphics[height=4cm]{img/ultra-sensor.png} \end{center}
-
 The sensor has four screw terminals, labelled **Vcc**, **Trig**, **Echo** and **GND**.
 
 * **Vcc** is the positive voltage pin and must be connected to 5V.
@@ -18,8 +16,6 @@ The `Robot` library will automatically measure the time between the trigger and 
 ## Setting up the sensor
 
 To use the sensor, you will need to do some wiring.
-
-\begin{center}  \includegraphics[height=4cm]{img/ultra-strip.png} \end{center}
 
 1. Cut and strip 4 wires (one red, one black, 2 in colours of your choice)
 2. Screw the red wire into VCC
