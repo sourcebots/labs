@@ -11,7 +11,7 @@ Before you can do any practical electronics, you need to have some understanding
 
 **Current** is the **rate of flow** of charge. This means the amount of charge flowing in one second. In the case of a wire **electrons will flow**. Current is measured in **Amperes (A)**. If a wire carries a current of 1 Amp, 1 Coulomb of charge ($6.25 \times 10^{18}$ electrons) moves through that wire every second!
 
-**Potential difference** (Voltage) is the amount of work done (in Joules) to move 1 Coulomb of charge from one point to another. There isn't a way to measure voltage as an absolute quantity (think of things like temperature or force), so all voltages are measured relative to another point. Potential difference is measured in **Volts (V)**.
+**Potential difference** (Voltage) is the amount of work done (in Joules) to move 1 Coulomb of charge from one point to another. There isn't a way to measure voltage as an absolute quantity, so all voltages are measured relative to another point. Potential difference is measured in **Volts (V)**.
 
 **Resistance** is a way of measuring how difficult it is for current to flow through something. You might be familiar with the following equation: 
 
