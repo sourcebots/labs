@@ -1,8 +1,11 @@
 # Introduction to Circuit Construction and Testing
-This section of the lab aims to equip you with the skills you need to construct circuits for your robot. In its most simple form, a circuit provides a path for current to flow from a voltage source to ground, usually doing some useful work on the way.
+This section of the lab aims to equip you with the skills you need to construct circuits for your robot. In its most simple form, a circuit provides a path for current to flow, usually doing some useful work on the way.
 
 ## Constructing Circuits
 ### Breadboards
+
+\begin{center}  \includegraphics[height=4cm]{img/BreadboardContacts.png} \end{center}
+
 A breadboard is a way of quickly prototyping circuits. A breadboard consists of a piece of plastic with small holes arranged in a grid. 
 Underneath the plastic surface, each column has a metal component. This metal piece has two purposes. Firstly, it provides an electrical connection between each of the components in a row, and secondly, clamping onto the leg of a component to hold it in place.
 While this provides a fast, easy way to test whether your circuit will work, the components are not held in place strongly enough 
@@ -13,9 +16,9 @@ the breadboard has two long rows along the top and bottom. These are split along
 supplies to your circuit, for example 5V and Ground.
 
 ### Stripboard
-As mentioned previously, breadboard is often not suitable for creating a circuit permanently. This is what stripboard (also known as protoboard) is used for
-Protoboard allows you to solder your components into place for a more permanent solution. Stripboard is arranged in the same way as breadboard. Place the components legs through from the plastic coated side,
-and then solder the legs to the exposed copper on the bottom. One area where stripboard is more flexible than breadboard is the ability to break the copper trace.
+As mentioned previously, breadboard is often not suitable for creating a circuit permanently. This is what stripboard (also known as protoboard) is used for.
+Stripboard allows you to solder your components into place for a more permanent solution. While it is more permanent, stripboard does still have issues which lead to it generally only being used for protoypes, or small batches of simple circuits. Stripboards are arranged in the same way as breadboards. 
+Place the components legs through from the plastic coated side,and then solder the legs to the exposed copper on the bottom. One area where stripboard is more flexible than breadboard is the ability to break the copper trace.
 This allows multiple components to be placed in the same column without connecting them. A specialist tool is used to do this.
 
 ## Testing Circuits
@@ -23,11 +26,12 @@ This allows multiple components to be placed in the same column without connecti
 The best way to initially test your circuit is to use one of the power supplies on your desk. These come in two forms in our lab, 30V,2A and 15V,5A. These power supplies come with adjustable voltage (in both coarse and fine increments) and 
 current limit. The current limit should always be used as it prevents excessive short circuit currents. This can prevent damage if it is set appropriately. Generally, you should calculate how much current your circuit should draw and 
 set the current limit slightly above that. In order to use these supplies, they must first be turned on using the switch to the left, which will allow you to set voltage
-and current limits, and then the output must be enabled by pressing the button to the right. The output being enabled is indicated by a small LED. This can be connected to your circuit by using the screw terminals labled "+" and "-" using wire.
+and current limits (this should be done before connecting your circuit, as the power supply may have been left enabled by the previous user, and may be set to voltages and currents too high for your circuit to handle), and then the output must be enabled by pressing the button to the right. The output being enabled is indicated by a small LED. This can be connected to your circuit by using the screw terminals labled "+" and "-" using wire (the banana connectors unscrew to allow you to clamp wire behind them).
 
 ### Taking Measurements from Circuits
 In the lab, you will find that your desk has both an oscilloscope and a digital multimeter. 
 These are both useful tools for investigating issues within your circuit, but have different functions.
+
 #### Multimeters
 A Digital Multimeter (DMM) is a useful tool for general debugging of a circuit, being able to measure a number of different physical properties. On the front panel of the device
 there are buttons to choose what the DMM will measure. This allows you to take readings of resistance, capacitance, current, voltage, diode polarity, and continuity.

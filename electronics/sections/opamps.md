@@ -1,6 +1,6 @@
 # Use of Operational Amplifiers (Op Amps)
 
-An operational amplifier is a device that takes 2 inputs, measures the difference between them, then outputs this voltage increased by a factor known as "gain". The gain of an operational amplifier is the extent to which the difference in voltage between its two inputs is increased. The two inputs of are normally identified as the "inverting" and "non-inverting", indicated on the schematic by "-" and "+" respectively.
+An operational amplifier is a device that takes 2 inputs, measures the difference between them, then outputs this voltage increased by a factor known as "gain". The two inputs of are normally identified as the "inverting" and "non-inverting", indicated on the schematic by "-" and "+" respectively.
 
 An op-amp also requires two different supply voltages to function. Op-amps can be characterised by the power supplies they require, which divides them into 2 groups, single supply, which require a positive supply and ground, and dual supply, which require a positive and negative supply, along with a ground connection. These supplies determine the output range of an op-amp, as it will be unable to exceed these voltages, regardless of its gain. The gain of an op-amp is typically on the order of 100,000. In other words, if the supply were large enough, a 1 mV difference between the inputs would result in a 100V output.
 
@@ -14,7 +14,7 @@ However, In circuits where analogue and digital signals are both present, the sa
 
 Try building the circuit shown above, connecting the signal generator in place of voltage supply V2. Set the signal generator to produce a sinusoidal output with a peak to peak amplitude of 5 volts and a DC offset of 2.5 volts. 
 
-* What happens if you change the values of R1 and R2?
-* What if you were to connect your phototransistor in place of the signal generator?
+- What happens if you change the values of R1 and R2?
+- What if you were to connect your phototransistor in place of the signal generator?
 
 What do you think is happening here? Do you think that you could use it for your robot?
