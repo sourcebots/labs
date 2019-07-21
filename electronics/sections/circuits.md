@@ -3,6 +3,9 @@ This section of the lab aims to equip you with the skills you need to construct 
 
 ## Constructing Circuits
 ### Breadboards
+
+\begin{center}  \includegraphics[height=4cm]{img/BreadboardContacts.png} \end{center}
+
 A breadboard is a way of quickly prototyping circuits. A breadboard consists of a piece of plastic with small holes arranged in a grid. 
 Underneath the plastic surface, each column has a metal component. This metal piece has two purposes. Firstly, it provides an electrical connection between each of the components in a row, and secondly, clamping onto the leg of a component to hold it in place.
 While this provides a fast, easy way to test whether your circuit will work, the components are not held in place strongly enough 

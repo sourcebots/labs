@@ -9,7 +9,7 @@ The IR tripwire circuit contains four components that you would need to wire to 
 
 LEDs are a form of diode. A diode is an electronic component which will only conduct in one direction. A diode has a cathode and an anode (see below). The diode will only conduct from anode to cathode.
 
-\begin{center}  \includegraphics[height=4cm]{img/diode.png} \end{center}
+\begin{center}  \includegraphics[height=8cm]{img/Led.png} \end{center}
 
 LEDs have a particularly high forward voltage; roughly 1.2V for the IR LEDs that you will be using here. Each Coulomb of charge passing through it will lose 1.2J of energy, which is converted to Infrared radiation.
 
