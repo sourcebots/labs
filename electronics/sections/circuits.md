@@ -1,5 +1,5 @@
 # Introduction to Circuit Construction and Testing
-This section of the lab aims to equip you with the skills you need to construct circuits for your robot. In its most simple form, a circuit provides a path for current to flow from a voltage source to ground, usually doing some useful work on the way.
+This section of the lab aims to equip you with the skills you need to construct circuits for your robot. In its most simple form, a circuit provides a path for current to flow, usually doing some useful work on the way.
 
 ## Constructing Circuits
 ### Breadboards
