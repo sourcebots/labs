@@ -14,11 +14,22 @@
 
 \renewcommand\familydefault{\sfdefault}
 
+\font\titlefont=cmr12 at 40pt
+\title{{\titlefont SourceBots Electronics Labs}}
+\date{Summer 2019}
+
 \begin{document}
+  \begin{titlepage}
+    \maketitle
+    \begin{center}
+      \includegraphics[width=\textwidth]{img/SourceBots.png}      
+    \end{center}
+  \end{titlepage}
   \input{section-circuits}
   \input{section-collision}
   \input{section-infrared}
   \input{section-ultrasound}
   \input{section-analogue}
   \input{section-opamps}
+  \input{section-metal_strip}
 \end{document}

@@ -2,7 +2,7 @@ PANDOCARGS=-t latex
 
 all: lab.pdf
 
-lab.pdf: lab.tex section-collision.tex section-infrared.tex section-analogue.tex section-ultrasound.tex section-circuits.tex section-opamps.tex
+lab.pdf: lab.tex section-collision.tex section-infrared.tex section-analogue.tex section-ultrasound.tex section-circuits.tex section-opamps.tex section-metal_strip.tex
 	pdflatex lab.tex
 
 section-%.tex: sections/%.md
