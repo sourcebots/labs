@@ -48,17 +48,3 @@ as well as other factors based on your specific project. Which method do you thi
 
 \begin{center} \includegraphics[height=8cm]{img/debounced_metal_strip.png} \end{center}
 *Sensor circuit with capacitor for debouncing*
-
-
-## Simon Says (Extension)
-Let's have a bit of fun, load the file `simon_says.py` and put it onto your robot USB!
-
-You can download it from [here](https://gist.github.com/PeterJCLaw/8d3ecfe70c331fe9683e2e264e829bc0).
-
-You will also need to rename the `simon_says.py` to `main.py`
-
-**Note: You will have to edit the `simon-says.py` lines 12-16 to the pins you're using. The INPUT-PIN variable is for your metal contacts and the OUTPUT-PIN variable is for your LEDs**
-
-Wire up two more of the metal contact circuits and two more LED circuits and plug the LEDs into pins [3, 4] and the other two metal contact pins into [6, 7]
-
-Run the Simon Says game on your robot and play the game!
