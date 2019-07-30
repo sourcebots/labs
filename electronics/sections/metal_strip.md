@@ -21,7 +21,6 @@ In the above figure, the grey box is a metal object. When the contacts are not o
 The diagram below illustrates the required circuit for above:
 
 \begin{center} \includegraphics[height=8cm]{img/led-series.png} \end{center}
-*LED Circuit with protecting diode*
 
 
  - Write a program that keeps track of how many times you have completed the circuit and make it iluminate an LED after the circuit has been completed three times. Connect the metal contact into pin 5.
@@ -47,4 +46,3 @@ as well as other factors based on your specific project. Which method do you thi
 - Try to improve your counting circuit / code to deal with switch bounce. If you use a capacitor, this is where it should go:
 
 \begin{center} \includegraphics[height=8cm]{img/debounced_metal_strip.png} \end{center}
-*Sensor circuit with capacitor for debouncing*
