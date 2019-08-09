@@ -32,7 +32,7 @@ Above is an example of a potential divider, where the output voltage (Vout) is g
 
 $$\text{Vout} = \text{V1} \times \frac{\text{R2}}{\text{R1+R2}}$$
 
-If one of the resistors changes value the output voltage will also change. This means potential dividers can be used as part of a sensor circuit. For example, a light sensor can be made if one of the resistor is a light dependent resistor.
+If one of the resistors changes value the output voltage will also change. This means potential dividers can be used as part of a sensor circuit. For example, a light sensor can be made if one of the resistors is a light dependent resistor.
 
 ## Force Sensitive Resistors (FSR)
 
