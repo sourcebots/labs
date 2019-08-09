@@ -1,21 +1,36 @@
 # Infrared Tripwires
 
+### Robot Progress
+* Creation of tripwire sensors
+
+### Knowledge
+* Basic understanding of LED and transistor operation
+* Calculating and selecting suitable resistors for a circuit
+
+### Skills
+* Breadboard prototyping
+* More complex soldering
+* Using a multimeter to take measurements
+
+## Introduction
+
 Many electronic systems can be used to produce digital inputs. In the first tutorial, we considered physical switches. In this tutorial we're going to look at another source of a digital input.
 Something which robots can make good use of is tripwires. This can tell a robot whether or not it has collected an item. Tripwires can be made by generating a beam of light and then detecting that beam of light with a sensor.
-If we use visible light for the tripwire it will have a lot of **interference** from the arena lights, so it would be better to use something less common. For short ranges Infrared is a good choice.
-The IR tripwire circuit contains four components that you would need to wire to your robot. Two resistors, an IR LED, and an IR phototransistor. The IR LED is used to create the IR beam, and the phototransistor detects this beam.
+If we use visible light for the tripwire it will have a lot of *interference* from the arena lights, so it would be better to use something less common. For short ranges Infrared is a good choice.
+The IR tripwire circuit contains four components: Two resistors, an IR LED, and an IR phototransistor. 
+The IR LED is used to create the IR beam and the phototransistor detects this beam.
 
 ## Diodes and LEDs
 
-LEDs are a form of diode. A diode is an electronic component which will only conduct in one direction. A diode has a cathode and an anode (see below). The diode will only conduct from anode to cathode.
+LEDs are a form of diode. A diode is an electronic component which will only conduct in one direction. The terminals are called the *cathode* and *anode*. The diode will only conduct from anode to cathode.
 
 \begin{center}  \includegraphics[height=8cm]{img/Led.png} \end{center}
 
-LEDs have a particularly high forward voltage; roughly 1.2V for the IR LEDs that you will be using here. Each Coulomb of charge passing through it will lose 1.2J of energy, which is converted to Infrared radiation.
+LEDs have a high *forward voltage* (the potential difference needed for it to conduct); roughly 1.2V for the IR LEDs that you will be using here. Each Coulomb of charge passing through it will lose 1.2J of energy, which is converted to Infrared radiation.
 
 ## Wiring up the LED
 
-LEDs are polarized devices. If you plug them in backwards they may break. LEDs have two features to help you tell anode from cathode. Firstly, LEDs have one long and one short leg. The long leg is the anode (+). The other feature is that LEDs will have a round side and a flat edge. The flat edge shows you where the cathode (-) is.
+LEDs are polarized devices. If you plug them in backwards they will not work. LEDs have two features to help you tell anode from cathode. Firstly, LEDs have one long and one short leg. The long leg is the anode (+). The other feature is that LEDs will have a round side and a flat edge. The flat edge shows you where the cathode (-) is.
 
 A useful way to remember this is **short to nought**.
 
@@ -23,11 +38,11 @@ Our IR LED is an L-53F3C. From the datasheet we can find that the LED uses a for
 
 \begin{center}  \includegraphics[width=18cm]{img/led-spec.png} \end{center}
 
-This is the circuit that we will be using, and using the diagram we can work out what value the resistor must be.
+This is the circuit that we will be using:
 
 \begin{center}  \includegraphics[width=5cm]{img/ir-circuit.png} \end{center}
 
-We can now figure out the value of R needed by using R = V/I. V is the voltage drop across the resistor (5 – 1.2) and I is the current flowing through it (20mA). This gives us a value for R of:
+We can now figure out the value of R needed using R = V/I. V is the voltage drop across the resistor (5 – 1.2 = 3.8V) and I is the current flowing through it (20mA). This gives us a value for R of:
 
 $$R = \frac{3.8}{0.02} = 190\Omega$$
 
@@ -46,13 +61,13 @@ A typical transistor will have a gain of 100.
 
 \begin{center}  \includegraphics[height=5cm]{img/transistor.png} \end{center}
 
-When no current flows into the base, the transistor acts like a huge resistor and very little current can flow through it. When a small current flows into the base the transistor acts like a resistor with a small value, so a lot of current can flow through it. This is essentially the same as a switch; only a small current base current is used instead of a physical force.
+When no current flows into the base, the transistor acts like a huge resistor and very little current can flow through it. When a small current flows into the base the transistor acts like a resistor with a small value, so a lot of current can flow through it. This is essentially the same as a switch, with base current instead of a physical force.
 
 A phototransistor behaves in the same way, only instead of having a base wire phototransistors are triggered by light. When light shines on the phototransistor a current is allowed to flow from the collector through the emitter. More light gives a bigger current.
 
 ## Wiring up the phototransistor
 
-In the collision tutorial, we used a pull-down resistor to help us read the state of the switch. In this case we'll use a pull-up resistor. The voltage across the phototransistor will tell us whether or not light is shining on it.
+In the collision tutorial, we used a pull-down resistor to help us read the state of the switch. In this case we'll use a pull-up resistor. The voltage across the phototransistor will tell us if IR light is shining on it.
 
 \begin{center}  \includegraphics[width=5cm]{img/photo-circuit.png} \end{center}
 
@@ -62,7 +77,11 @@ When the beam is blocked, there will be a very small current in the circuit. Fro
 
 \begin{center}  \includegraphics[width=18cm]{img/photo-dark.png} \end{center}
 
-So the current will be around 100nA when the beam is blocked. For the Arduino to read a high input we will need at least 4V across the phototransistor, so 1V across the resistor. Here, as the current through the transistor increases, a larger current also flows through R1, and hence, the voltage drop across R1 is increased. In an ideal case, you would read exactly 5V when no light reached the transistor, and 0V at the output when maximum light reached the transistor. An interesting property of digital circuits is the reason why this still works, even with non-ideal components. In digital electronics, values are relative to a threshold voltage, where if they are above, they read as "1", and below as "0", even if they are not exactly 5V or 0V.
+So the current will be around 100nA when the beam is blocked.
+
+In an ideal case you would read exactly 5V when no light reached the transistor, and 0V at the output when maximum light reached the transistor. In digital electronics values are relative to a threshold voltage, where if they are higher they read as "1", and lower as "0", even if they are not exactly 5V or 0V.
+
+The Arduino will read a digital input as *high* or "1" if there is at least 4V across the phototransistor, so 1V across the resistor.  When the current through the transistor increases, a larger current also flows through R1 so the voltage drop across R1 is increased (as $$V = IR). 
 
 To calculate the maximum resistor size you can use the usual equation:
 
@@ -82,9 +101,11 @@ $$R = \frac{4}{3 \times 10^{-3}} = 1333\Omega$$
 
 Now that you have a maximum and minimum, you can experiment to find what resistor value gives you the best high and low level outputs. Higher resistor values will make the detector more sensitive.
 
-**Task**: Try assembling the circuit that has been described. All the parts you need are available in the lab. If you need help, remember that you can always ask a mentor. Start on breadboard and once you’re happy, solder it onto a stripboard.
+### Task - Make an infrared tripwire sensor for your robot
+ 
+ Try assembling the circuit that has been described. All the parts you need are available in the lab. If you need help, remember that you can always ask a mentor. Start on breadboard and test the circuit using a multimeter. Try different resistors to change the sensitivity. Once you are happy with the values, solder the circuits onto stripboard.
 
-Things to consider:
+**Things to consider:**
 
 - Is a more sensitive detector necessarily better?
 - Will the distance between the LED and phototransistor make a difference? Why?
