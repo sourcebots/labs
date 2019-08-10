@@ -67,6 +67,12 @@ A phototransistor behaves in the same way, only instead of having a base wire ph
 
 ## Wiring up the phototransistor
 
+The phototransistor we are using is the L-53P3C.
+
+\begin{center}  \includegraphics[height=5cm]{img/ir_sensor.png} \end{center}
+\begin{center}  \includegraphics[height=5cm]{img/phototransistor_symbol.png} \end{center}
+
+
 In the collision tutorial, we used a pull-down resistor to help us read the state of the switch. In this case we'll use a pull-up resistor. The voltage across the phototransistor will tell us if IR light is shining on it.
 
 \begin{center}  \includegraphics[width=5cm]{img/photo-circuit.png} \end{center}
