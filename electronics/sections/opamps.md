@@ -38,3 +38,5 @@ In this configuration the output will be high if the non-inverting output is hig
 
 - How could a comparator circuit be useful for your robot?
 - What is the advantage of using this circuit instead of analogue readings from the Arduino?
+
+\pagebreak

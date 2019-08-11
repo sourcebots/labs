@@ -17,8 +17,8 @@ supplies to your circuit, for example 5V and Ground.
 
 ### Stripboard
 As mentioned previously, breadboard is often not suitable for creating a circuit permanently. This is what stripboard (also known as protoboard) is used for.
-Stripboard allows you to solder your components into place for a more permanent solution. While it is more permanent, stripboard does still have issues which lead to it generally only being used for protoypes, or small batches of simple circuits. Stripboards are arranged in the same way as breadboards. 
-Place the components legs through from the plastic coated side,and then solder the legs to the exposed copper on the bottom. One area where stripboard is more flexible than breadboard is the ability to break the copper trace.
+Stripboard allows you to solder your components into place for a more permanent solution. While it is more permanent, stripboard does still have issues which lead to it generally only being used for protoypes, or small batches of simple circuits. Stripboards are arranged in a similar way to breadboards. 
+Place the components legs through from the non-copper (FR4) side, and then solder the legs to the exposed copper on the bottom. One area where stripboard is more flexible than breadboard is the ability to break the copper trace.
 This allows multiple components to be placed in the same column without connecting them. A specialist tool is used to do this.
 
 ## Testing Circuits
@@ -59,3 +59,5 @@ the current limit being set too low. Think about how much current you expected.
 - Does anything in your circuit feel hot?
 - Think about what you would expect your signals to be doing. Use the oscilloscope to verify this is happening. Start from the beginning of your circuit, and work forward.
 Find where you stop seeing things that you are expecting. This is generally where the fault lies.
+
+\pagebreak

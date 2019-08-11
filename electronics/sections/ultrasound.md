@@ -84,3 +84,5 @@ To use the sensor, you will need to do some wiring.
 5. Connect the red wire to 5V on the Arduino and the black wire to GND on the Arduino.
 6. Connect the **Trig** and **Echo** wires to any digital IO lines on the Arduino.
 7. See the [docs][docs] for information on using the sensor.
+
+\pagebreak

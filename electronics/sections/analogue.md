@@ -59,3 +59,5 @@ If you place your foam sensor in a potential divider configuration with a resist
 * Which value of fixed resistor gives the greatest variation? You might be able to investigate mathematically.
 * Is greater sensitivity always better?
 * How could this type of sensor be useful for your robot?
+
+\pagebreak

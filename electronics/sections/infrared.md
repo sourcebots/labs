@@ -122,3 +122,5 @@ The tokens this year are covered in reflective foil. This gives you lots of opti
 - Is a more sensitive detector necessarily better?
 - Will the distance between the LED and phototransistor make a difference? Why?
 - How could you make the IR beam from the LED narrower? Why might this be useful?
+
+\pagebreak

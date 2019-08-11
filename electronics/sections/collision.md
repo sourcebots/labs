@@ -37,7 +37,7 @@ $$V = IR$$
 
 Resistance is measured in Ohms ($\Omega$).
 
-Now that we know some theory, we can do something useful.
+Now that we know some theory, we can do something useful. You can use the chart in the appendix to work out the resistor's value from it's colours.
 
 ## Building a simple sensor
 
@@ -71,3 +71,5 @@ You’ll find some switches, prototyping board, resistors and wire in the lab.
 * How could your robot use a digital collision sensor?
 * How will you mount the switch to your robot?
 * Could you use more than one sensor?
+
+\pagebreak
