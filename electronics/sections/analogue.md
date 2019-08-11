@@ -55,6 +55,7 @@ If you place your foam sensor in a potential divider configuration with a resist
 * Test a few other values of fixed resistor. How does this affect the range of voltage?
 
 **Things to consider:**
+
 * Which value of fixed resistor gives the greatest variation? You might be able to investigate mathematically.
 * Is greater sensitivity always better?
 * How could this type of sensor be useful for your robot?

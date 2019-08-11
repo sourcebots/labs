@@ -23,7 +23,7 @@ This allows multiple components to be placed in the same column without connecti
 
 ## Testing Circuits
 ### Powering your Circuit
-The best way to initially test your circuit is to use one of the power supplies on your desk. These come in two forms in our lab, 30V,2A and 15V,5A. These power supplies come with adjustable voltage (in both coarse and fine increments) and 
+The best way to initially test your circuit is to use one of the power supplies on your desk. These come in two forms in our lab, 30V, 2A and 15V, 5A. These power supplies come with adjustable voltage (in both coarse and fine increments) and 
 current limit. The current limit should always be used as it prevents excessive short circuit currents. This can prevent damage if it is set appropriately. Generally, you should calculate how much current your circuit should draw and 
 set the current limit slightly above that. In order to use these supplies, they must first be turned on using the switch to the left, which will allow you to set voltage
 and current limits (this should be done before connecting your circuit, as the power supply may have been left enabled by the previous user, and may be set to voltages and currents too high for your circuit to handle), and then the output must be enabled by pressing the button to the right. The output being enabled is indicated by a small LED. This can be connected to your circuit by using the screw terminals labled "+" and "-" using wire (the banana connectors unscrew to allow you to clamp wire behind them).
