@@ -61,6 +61,8 @@ In order to wire up the above circuit, three connections would be required:
 * A connection between a digital input on the Arduino and the output between the switch and the resistor.
 * A connection between the 5V pin on the Arduino and the switch.
 
+\begin{center}  \includegraphics[height=8cm]{img/bump-switch-breadboard.png} \end{center}
+
 ### Task - Make a collision detector for your robot
 
 Now that you know how to make a switch work as a digital input, try assembling some switches that could be used on your robot. Start by assembling it on a breadboard. When you're sure it works, you can solder it onto stripboard (ask a SourceBots volunteer for help).

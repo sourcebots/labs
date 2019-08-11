@@ -117,6 +117,9 @@ The tokens this year are covered in reflective foil. This gives you lots of opti
  Try assembling the circuit that has been described. All the parts you need are available in the lab. If you need help, remember that you can always ask a mentor. Start on breadboard and test the circuit using a multimeter. Try different resistors to change the sensitivity. Once you are happy with the values, solder the circuits onto stripboard.
  Afterward, see if you can turn your tripwire sensor into a reflection-style sensor. Discuss with your team how you might use theses sensors on your robot.
 
+ \begin{center} \includegraphics[height=9cm] {img/Phototransistor-breadboard.png} \end{center}
+
+
 **Things to consider:**
 
 - Is a more sensitive detector necessarily better?
