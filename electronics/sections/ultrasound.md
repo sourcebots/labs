@@ -1,5 +1,6 @@
 # Ultrasound Sensors
 
+## Outcomes
 ### Robot Progress
 * Implementing ultrasonic distance sensors
 

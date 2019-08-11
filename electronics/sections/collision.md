@@ -1,5 +1,6 @@
 # Collision Sensors
 
+## Outcomes
 ### Robot Progress
 * Creation of collision/bump detectors
 

@@ -1,5 +1,6 @@
 # Analogue Inputs and Potential Dividers
 
+## Outcomes
 ### Robot Progress
 * Creation of analogue force sensors
 

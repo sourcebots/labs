@@ -1,5 +1,6 @@
 # Use of Operational Amplifiers (Op Amps)
 
+## Outcomes
 ### Robot Progress
 * Implementing a comparator system
 
@@ -11,6 +12,7 @@
 * Breadboard prototyping
 * Basic soldering
 
+## Theory
 An operational amplifier is a device that takes 2 inputs, measures the difference between them, then outputs this voltage increased by a factor known as "gain". The two inputs of are normally identified as the *inverting* and *non-inverting*, indicated on the schematic by "-" and "+" respectively.
 
 \begin{center} \includegraphics [height=5cm] {img/opamp.png} \end{center}
@@ -27,7 +29,7 @@ The simplest use of an op-amp is a *comparator* circuit, as shown below.
 
 In this configuration the output will be high if the non-inverting output is higher than the inverting input. Otherwise the output will be low.
 
-### Task - Building a comparator circuit
+## Task - Building a comparator circuit
 * Build the circuit shown above, connecting the signal generator in place of voltage supply V2. 
 * Set the signal generator to produce a sinusoidal output with a peak to peak amplitude of 5 volts and a DC offset of 2.5 volts. 
 

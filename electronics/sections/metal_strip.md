@@ -12,6 +12,7 @@
 * Component selection
 * Basic soldering
 
+## Theory
 For this year's game the scoring zones will be marked out with metal tape.
 
 Using what you have learned in previous labs about switches, you can place metal contacts on your robot so you can detect when you have passed one of these strips.
@@ -22,7 +23,7 @@ The schematic below illustrates the basic circuit setup. Anything inside the bla
 
 In the above figure, the grey box is a metal object. When the contacts are not on a metal object the Arduino pin is pulled **HIGH** by **R1**, but when the contacts are connected by a metalic object, the pin is pulled **LOW** through the object (The object and **R1** actually form a potential divider where the resistance across the object is *very low*, less than $1\Omega$).
 
-### Task 1
+## Task 1
 
  - Build a metal object sensor using the theory above
 
@@ -53,7 +54,7 @@ The voltage rise is exponential, described by the time constant $\tau = RC$. Thi
     - Reliability
 as well as other factors based on your specific project. Which method do you think is the best for your robot?
 
-### Task 2 - Debouncing
+## Task 2 - Debouncing
 * Implement a debouncing solution for your metal strip detector.
 * If you decide to use a capacitor, your circuit should be:
 

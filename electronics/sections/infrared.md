@@ -1,5 +1,6 @@
 # Infrared Tripwires
 
+## Outcomes
 ### Robot Progress
 * Creation of tripwire sensors
 * Creation of reflection sensors
@@ -37,7 +38,7 @@ A useful way to remember this is **short to nought**.
 
 Our IR LED is an L-53F3C. From the datasheet we can find that the LED uses a forward voltage of 1.2V and a forward current of 20mA. So we will need a resistor to limit the current.
 
-\begin{center}  \includegraphics[width=18cm]{img/led-spec.png} \end{center}
+\begin{center}  \includegraphics[width=\textwidth]{img/led-spec.png} \end{center}
 
 This is the circuit that we will be using:
 
@@ -58,7 +59,7 @@ Transistors can be used to make very complicated devices, but for our purposes t
 
 $$I_{Collector} = \text{Gain} \times I_{Base}$$
 
-A typical transistor will have a gain of 100.
+A typical transistor will have a gain of 100. Below are a couple of examples of common transistors.
 
 \begin{center}  \includegraphics[height=5cm]{img/transistor.png} \end{center}
 
@@ -70,8 +71,7 @@ A phototransistor behaves in the same way, only instead of having a base wire ph
 
 The phototransistor we are using is the L-53P3C.
 
-\begin{center}  \includegraphics[height=5cm]{img/ir_sensor.png} \end{center}
-\begin{center}  \includegraphics[height=5cm]{img/phototransistor_symbol.png} \end{center}
+\begin{center}  \includegraphics[width=\textwidth]{img/phototransistor.png} \end{center}
 
 
 In the collision tutorial, we used a pull-down resistor to help us read the state of the switch. In this case we'll use a pull-up resistor. The voltage across the phototransistor will tell us if IR light is shining on it.
@@ -82,7 +82,7 @@ Choosing a value for R is slightly harder than before. Let's start with the data
 
 When the beam is blocked, there will be a very small current in the circuit. From the datasheet:
 
-\begin{center}  \includegraphics[width=18cm]{img/photo-dark.png} \end{center}
+\begin{center}  \includegraphics[width=\textwidth]{img/photo-dark.png} \end{center}
 
 So the current will be around 100nA when the beam is blocked.
 
@@ -94,11 +94,11 @@ To calculate the maximum resistor size you can use the usual equation:
 
 $$R = \frac{1}{100 \times 10^{-9}} = 10000000\Omega$$
 
-So a $10M\Omega$ resistor would be suitable.
+This means that in theory a $10M\Omega$ resistor would be suitable. In practice, you can probably use a smaller value than this. 
 
 When the beam is not blocked a larger current will flow. From the datasheet the maximum allowed current is 3mA.
 
-\begin{center}  \includegraphics[width=18cm]{img/photo-state.png} \end{center}
+\begin{center}  \includegraphics[width=\textwidth]{img/photo-state.png} \end{center}
 
 So for the on state we want a current of no more than 3mA, and a voltage across the phototransistor of 1V. This means we want 4V across the resistor.
 
@@ -122,5 +122,6 @@ The tokens this year are covered in reflective foil. This gives you lots of opti
 - Is a more sensitive detector necessarily better?
 - Will the distance between the LED and phototransistor make a difference? Why?
 - How could you make the IR beam from the LED narrower? Why might this be useful?
+- The IR sensors can be used with the analogue inputs of the Arduino too. Think about how you could make use of this.
 
 \pagebreak
