@@ -88,7 +88,7 @@ So the current will be around 100nA when the beam is blocked.
 
 In an ideal case you would read exactly 5V when no light reached the transistor, and 0V at the output when maximum light reached the transistor. In digital electronics values are relative to a threshold voltage, where if they are higher they read as "1", and lower as "0", even if they are not exactly 5V or 0V.
 
-The Arduino will read a digital input as *high* or "1" if there is at least 4V across the phototransistor, so 1V across the resistor.  When the current through the transistor increases, a larger current also flows through R1 so the voltage drop across R1 is increased (as $$V = IR). 
+The Arduino will read a digital input as *high* or "1" if there is at least 4V across the phototransistor, so 1V across the resistor.  When the current through the transistor increases, a larger current also flows through R1 so the voltage drop across R1 is increased (as $V = IR$). 
 
 To calculate the maximum resistor size you can use the usual equation:
 
