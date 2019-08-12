@@ -51,7 +51,7 @@ The selected timescale is used for all channels, while the vertical scale is set
 The oscilloscopes in the lab also have an autoset function. This is normally worth trying first, however, it is not always suitable, depending on the signal contents.
 
 ## General Circuit Debugging Tips
-- Visually inspect your circuit. Are there any solder bridges between components? Does something look like it isn't soldered in or is lose in the breadboard.
+- Visually inspect your circuit. Are there any solder bridges between components? Does something look like it isn't soldered in or is loose in the breadboard?
 - Is your circuit drawing the amount of current that you expect it to?
 - Check your supply rails, are they at the voltages that you expect them to be?
 - Is the power supply showing the voltage you set it at? If not, this usually indicates either a short circuit (normally this would result in lower than the set voltage between the terminals, and more current than expected being drawn) or 
