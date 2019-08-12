@@ -1,5 +1,6 @@
 # Collision Sensors
 
+## Outcomes
 ### Robot Progress
 * Creation of collision/bump detectors
 
@@ -37,7 +38,7 @@ $$V = IR$$
 
 Resistance is measured in Ohms ($\Omega$).
 
-Now that we know some theory, we can do something useful.
+Now that we know some theory, we can do something useful. You can use the chart in the appendix to work out the resistor's value from it's colours.
 
 ## Building a simple sensor
 
@@ -60,6 +61,8 @@ In order to wire up the above circuit, three connections would be required:
 * A connection between a digital input on the Arduino and the output between the switch and the resistor.
 * A connection between the 5V pin on the Arduino and the switch.
 
+\begin{center}  \includegraphics[height=8cm]{img/bump-switch-breadboard.png} \end{center}
+
 ### Task - Make a collision detector for your robot
 
 Now that you know how to make a switch work as a digital input, try assembling some switches that could be used on your robot. Start by assembling it on a breadboard. When you're sure it works, you can solder it onto stripboard (ask a SourceBots volunteer for help).
@@ -71,3 +74,5 @@ You’ll find some switches, prototyping board, resistors and wire in the lab.
 * How could your robot use a digital collision sensor?
 * How will you mount the switch to your robot?
 * Could you use more than one sensor?
+
+\pagebreak
