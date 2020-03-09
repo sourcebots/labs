@@ -1,6 +1,6 @@
 # Use of Operational Amplifiers (Op Amps)
 
-An operational amplifier is a device that takes 2 inputs, measures the difference between them, then outputs this voltage increased by a factor known as "gain". The two inputs of are normally identified as the "inverting" and "non-inverting", indicated on the schematic by "-" and "+" respectively.
+An operational amplifier is a "differential" device. That means it takes 2 inputs, measures the difference between them, then outputs this voltage increased by a factor known as "gain". The two inputs of are normally identified as the "inverting" and "non-inverting", indicated on the schematic by "-" and "+" respectively.
 
 An op-amp also requires two different supply voltages to function. Op-amps can be characterised by the power supplies they require, which divides them into 2 groups, single supply, which require a positive supply and ground, and dual supply, which require a positive and negative supply, along with a ground connection. These supplies determine the output range of an op-amp, as it will be unable to exceed these voltages, regardless of its gain. The gain of an op-amp is typically on the order of 100,000. In other words, if the supply were large enough, a 1 mV difference between the inputs would result in a 100V output.
 
