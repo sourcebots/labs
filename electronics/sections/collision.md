@@ -54,3 +54,23 @@ You’ll find some switches, prototyping board, resistors and wire in the lab.
 * How could your robot use a digital collision sensor?
 * How will you mount the switch to your robot?
 * Could you use more than one sensor?
+
+### Switch bounce
+
+ You might find that when you press the switch it seems to register lots of contacts each time you touch something. This is because the contacts can easily 'bounce' when they are connected. This effect happens very quickly, so you won't be able to see it but your Arduino can read it's input pins fast enough for it to count each small bounce as a new time a connection has been made. To make your counter more reliable you need to make sure it only counts once each time you connect the metal contacts.
+- One way of doing this is to force the Arduino to wait for a few milliseconds after detecting a connection has been made so that all the 'bouncing' has stopped before it carries on running it's code. There is a problem with this method though - this means your code is spending time doing *nothing* - including not controlling your robot! We need to find a "non-blocking" way of dealing with this instead.
+- It is possible to find out how many milliseconds have passed since the Arduino turned on (ask for help if you need it). You could use this to keep track of when each connection is detected and only count the ones that aren't caused by bounces.
+- You can also solve it in hardware, by adding a capacitor to your circuit. The behaviour of a capacitor is dependent on *the rate of change of voltage* across it. This means it will smooth out voltage spikes, including getting rid of the bouncing.
+
+\begin{center}  \includegraphics[height=8cm]{img/Series_RC_capacitor_voltage.png} \end{center}
+
+When the voltage across the capacitor changes (like the step input above) the voltage across the capacitor takes time to reach the supply. That rise is exponential, described by the time constant $\tau = RC$. Think about what capacitance values might be suitable.
+- There are also far more complicated circuits you could use for this that would work better (if you are interested, have a look at [Schmitt triggers](https://en.wikipedia.org/wiki/Schmitt_trigger)). However like most engineering problems, you need to weigh up the pros and cons of each option based on:
+
+    - Performance
+    - Cost
+    - Simplicity
+    - Reliability
+as well as other factors based on your specific project. Which method do you think is the best for your robot?
+
+- Try to improve your circuit to deal with switch bounce. If you use a capacitor, it should go between the 'output' and ground.
