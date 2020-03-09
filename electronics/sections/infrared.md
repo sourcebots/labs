@@ -34,7 +34,7 @@ $$R = \frac{3.8}{0.02} = 190\Omega$$
 We could make this up from a $180\Omega$ resistor and a $10\Omega$ resistor in series, but according to the datasheet the absolute maximum current is 50mA, so a $180\Omega$ will be close enough!
 
 
-**Wire this circuit up on a breadboard. A smart phone camera or webcam can see IR light so you can use it to test if your circuit works. (Ask if you need help).**
+**Wire this circuit up on a breadboard. Some smart phone cameras or webcams can see IR light so you can use it to test if your circuit works. (Ask if you need help).**
 
 ## Transistors and Phototransistors
 
