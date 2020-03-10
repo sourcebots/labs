@@ -17,13 +17,13 @@ supplies to your circuit, for example 5V and Ground.
 
 ### Stripboard
 As mentioned previously, breadboard is often not suitable for creating a circuit permanently. This is what stripboard (also known as protoboard) is used for.
-Stripboard allows you to solder your components into place for a more permanent solution. While it is more permanent, stripboard does still have issues which lead to it generally only being used for protoypes, or small batches of simple circuits. Stripboards are arranged in the same way as breadboards. 
-Place the components legs through from the plastic coated side,and then solder the legs to the exposed copper on the bottom. One area where stripboard is more flexible than breadboard is the ability to break the copper trace.
+Stripboard allows you to solder your components into place for a more permanent solution. While it is more permanent, stripboard does still have issues which lead to it generally only being used for protoypes, or small batches of simple circuits. Stripboards are arranged in a similar way to breadboards. 
+Place the components legs through from the non-copper (FR4) side, and then solder the legs to the exposed copper on the bottom. One area where stripboard is more flexible than breadboard is the ability to break the copper trace.
 This allows multiple components to be placed in the same column without connecting them. A specialist tool is used to do this.
 
 ## Testing Circuits
 ### Powering your Circuit
-The best way to initially test your circuit is to use one of the power supplies on your desk. These come in two forms in our lab, 30V,2A and 15V,5A. These power supplies come with adjustable voltage (in both coarse and fine increments) and 
+The best way to initially test your circuit is to use one of the power supplies on your desk. These come in two forms in our lab, 30V, 2A and 15V, 5A. These power supplies come with adjustable voltage (in both coarse and fine increments) and 
 current limit. The current limit should always be used as it prevents excessive short circuit currents. This can prevent damage if it is set appropriately. Generally, you should calculate how much current your circuit should draw and 
 set the current limit slightly above that. In order to use these supplies, they must first be turned on using the switch to the left, which will allow you to set voltage
 and current limits (this should be done before connecting your circuit, as the power supply may have been left enabled by the previous user, and may be set to voltages and currents too high for your circuit to handle), and then the output must be enabled by pressing the button to the right. The output being enabled is indicated by a small LED. This can be connected to your circuit by using the screw terminals labled "+" and "-" using wire (the banana connectors unscrew to allow you to clamp wire behind them).
@@ -51,7 +51,7 @@ The selected timescale is used for all channels, while the vertical scale is set
 The oscilloscopes in the lab also have an autoset function. This is normally worth trying first, however, it is not always suitable, depending on the signal contents.
 
 ## General Circuit Debugging Tips
-- Visually inspect your circuit. Are there any solder bridges between components? Does something look like it isn't soldered in or is lose in the breadboard.
+- Visually inspect your circuit. Are there any solder bridges between components? Does something look like it isn't soldered in or is loose in the breadboard?
 - Is your circuit drawing the amount of current that you expect it to?
 - Check your supply rails, are they at the voltages that you expect them to be?
 - Is the power supply showing the voltage you set it at? If not, this usually indicates either a short circuit (normally this would result in lower than the set voltage between the terminals, and more current than expected being drawn) or 
@@ -59,3 +59,5 @@ the current limit being set too low. Think about how much current you expected.
 - Does anything in your circuit feel hot?
 - Think about what you would expect your signals to be doing. Use the oscilloscope to verify this is happening. Start from the beginning of your circuit, and work forward.
 Find where you stop seeing things that you are expecting. This is generally where the fault lies.
+
+\pagebreak
