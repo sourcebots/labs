@@ -108,14 +108,11 @@ $$R = \frac{4}{3 \times 10^{-3}} = 1333\Omega$$
 
 Now that you have a maximum and minimum, you can experiment to find what resistor value gives you the best high and low level outputs. Higher resistor values will make the detector more sensitive.
 
-### Reflection sensor
-
-The tokens this year are covered in reflective foil. This gives you lots of options for using your IR LEDs in creative ways. You could point the IR LED and the phototransistor at a token and see if the light is reflected. If it is, your robot must be approaching the token at right angles, otherwise the reflected light would miss the detector. You could even work out which direction to turn based on the reflection if you had a few phototransistors on your robot.
 
 ### Task - Make an infrared tripwire sensor for your robot
  
  Try assembling the circuit that has been described. All the parts you need are available in the lab. If you need help, remember that you can always ask a mentor. Start on breadboard and test the circuit using a multimeter. Try different resistors to change the sensitivity. Once you are happy with the values, solder the circuits onto stripboard.
- Afterward, see if you can turn your tripwire sensor into a reflection-style sensor. Discuss with your team how you might use theses sensors on your robot.
+Discuss with your team how you might use theses sensors on your robot.
 
  \begin{center} \includegraphics[height=9cm] {img/Phototransistor-breadboard.png} \end{center}
 
@@ -125,6 +122,5 @@ The tokens this year are covered in reflective foil. This gives you lots of opti
 - Is a more sensitive detector necessarily better?
 - Will the distance between the LED and phototransistor make a difference? Why?
 - How could you make the IR beam from the LED narrower? Why might this be useful?
-- The IR sensors can be used with the analogue inputs of the Arduino too. Think about how you could make use of this.
 
 \pagebreak
