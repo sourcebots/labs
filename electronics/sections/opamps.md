@@ -1,6 +1,9 @@
 # Use of Operational Amplifiers (Op Amps)
 
+An operational amplifier is a "differential" device. That means it takes 2 inputs, measures the difference between them, then outputs this voltage increased by a factor known as "gain". The two inputs of are normally identified as the "inverting" and "non-inverting", indicated on the schematic by "-" and "+" respectively.
+
 ## Outcomes
+
 ### Robot Progress
 * Implementing a comparator system
 

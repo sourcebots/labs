@@ -65,6 +65,8 @@ In order to wire up the above circuit, three connections would be required:
 
 ### Task - Make a collision detector for your robot
 
+**Task**: Make a collision detector for your robot. Use the oscilloscope or multimeter to check that it outputs high (5V) and low (0V) signals correctly.
+
 Now that you know how to make a switch work as a digital input, try assembling some switches that could be used on your robot. Start by assembling it on a breadboard. When you're sure it works, you can solder it onto stripboard (ask a SourceBots volunteer for help).
 
 You’ll find some switches, prototyping board, resistors and wire in the lab.
