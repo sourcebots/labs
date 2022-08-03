@@ -1,0 +1,33 @@
+name: Make labs PDF
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: recursive
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get install -y \
+        build-essentials \
+        pandoc \
+        texlive-all
+
+    - name: Make PDF
+      run: make -C electronics
+
+    - name: Archive produced binaries
+      uses: actions/upload-artifact@v3
+      with:
+        name: labs
+        path: electronics/lab.pdf
