@@ -31,7 +31,7 @@ The simplest use of an op-amp is a *comparator* circuit, as shown below.
 \begin{center} \includegraphics[height=5cm] {img/comparator.png} \end{center}
 \begin{center} \includegraphics[height=8cm] {img/Op-amp-breadboard.png} \end{center}
 
-In this configuration the output will be high if the non-inverting output is higher than the inverting input. Otherwise the output will be low.
+In this configuration the output will be high if the non-inverting input is higher than the inverting input. Otherwise the output will be low.
 
 ## Task - Building a comparator circuit
 * Build the circuit shown above, connecting the signal generator in place of voltage supply V2. 

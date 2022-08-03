@@ -71,22 +71,18 @@ Now that you know how to make a switch work as a digital input, try assembling s
 
 You’ll find some switches, prototyping board, resistors and wire in the lab.
 
-**Some things to consider are:**
+## Switch bounce
 
-* How could your robot use a digital collision sensor?
-* How will you mount the switch to your robot?
-* Could you use more than one sensor?
+ You might find that your Switch detection code is quite unreliable and seems to register lots of switching events each time you press the switch. This is because the contacts will usually 'bounce' when they are connected. This effect happens very quickly so you won't be able to see it, but your Arduino can read it's input pins fast enough for it to register each time a contact is made. To make your system more reliable you need to make sure it only triggers once each time.
 
-### Switch bounce
-
- You might find that when you press the switch it seems to register lots of contacts each time you touch something. This is because the contacts can easily 'bounce' when they are connected. This effect happens very quickly, so you won't be able to see it but your Arduino can read it's input pins fast enough for it to count each small bounce as a new time a connection has been made. To make your counter more reliable you need to make sure it only counts once each time you connect the metal contacts.
-- One way of doing this is to force the Arduino to wait for a few milliseconds after detecting a connection has been made so that all the 'bouncing' has stopped before it carries on running it's code. There is a problem with this method though - this means your code is spending time doing *nothing* - including not controlling your robot! We need to find a "non-blocking" way of dealing with this instead.
-- It is possible to find out how many milliseconds have passed since the Arduino turned on (ask for help if you need it). You could use this to keep track of when each connection is detected and only count the ones that aren't caused by bounces.
-- You can also solve it in hardware, by adding a capacitor to your circuit. The behaviour of a capacitor is dependent on *the rate of change of voltage* across it. This means it will smooth out voltage spikes, including getting rid of the bouncing.
+### *Debouncing* a switch 
+- You can avoid switch bounce in software by programming the robot to wait for a few milliseconds after detecting a connection has been made. This means it is spending time doing nothing - including controlling your robot - so we need to find a "non-blocking" way of dealing with this instead.
+- You can also solve it in hardware, by adding a capacitor to your circuit. The potential difference across a capacitor takes time to change, so it will *smooth* the signal from the switch.
 
 \begin{center}  \includegraphics[height=8cm]{img/Series_RC_capacitor_voltage.png} \end{center}
 
-When the voltage across the capacitor changes (like the step input above) the voltage across the capacitor takes time to reach the supply. That rise is exponential, described by the time constant $\tau = RC$. Think about what capacitance values might be suitable.
+The voltage rise is exponential, described by the time constant $\tau = RC$. Think about what capacitance values might be suitable.
+
 - There are also far more complicated circuits you could use for this that would work better (if you are interested, have a look at [Schmitt triggers](https://en.wikipedia.org/wiki/Schmitt_trigger)). However like most engineering problems, you need to weigh up the pros and cons of each option based on:
 
     - Performance
@@ -95,4 +91,16 @@ When the voltage across the capacitor changes (like the step input above) the vo
     - Reliability
 as well as other factors based on your specific project. Which method do you think is the best for your robot?
 
-- Try to improve your circuit to deal with switch bounce. If you use a capacitor, it should go between the 'output' and ground.
+## Task 2 - Debouncing
+* Implement a debouncing solution for your switch circuit.
+* If you decide to use a capacitor, your circuit should be:
+
+\begin{center} \includegraphics[height=8cm]{img/debounced_switch.png} \end{center}
+
+**Some things to consider are:**
+
+* How could your robot use a digital collision sensor?
+* How will you mount the switch to your robot?
+* Could you use more than one sensor?
+
+\pagebreak
