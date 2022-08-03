@@ -112,7 +112,7 @@ Now that you have a maximum and minimum, you can experiment to find what resisto
 ### Task - Make an infrared tripwire sensor for your robot
  
  Try assembling the circuit that has been described. All the parts you need are available in the lab. If you need help, remember that you can always ask a mentor. Start on breadboard and test the circuit using a multimeter. Try different resistors to change the sensitivity. Once you are happy with the values, solder the circuits onto stripboard.
-Discuss with your team how you might use theses sensors on your robot.
+Discuss with your team how you might use these sensors on your robot.
 
  \begin{center} \includegraphics[height=9cm] {img/Phototransistor-breadboard.png} \end{center}
 
