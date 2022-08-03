@@ -19,9 +19,9 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get install -y \
-        build-essentials \
+        build-essential \
         pandoc \
-        texlive-all
+        texlive
 
     - name: Make PDF
       run: make -C electronics
